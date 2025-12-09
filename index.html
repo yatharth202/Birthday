@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Ishuuuuu ❤️</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="stye.css">
+
+</head>
+<body>
+
+    <div class="bg-hearts" id="bg-hearts"></div>
+
+    <div class="music-toggle" id="musicToggle" onclick="toggleMusic()">
+        <i class="fas fa-music"></i>
+    </div>
+
+    <section class="hero">
+        <h1 id="hero-title">Happy Birthday, Ishuuuuu ❤️</h1>
+        <div class="big-heart">💖</div>
+        <p>You make my world softer, brighter, and happier.</p>
+    </section>
+
+    <section class="container">
+        <h2>Mera Cute Panda ki Sunder sunder Photos hehehe</h2>
+        <br>
+        <div class="gallery-grid">
+            <div class="photo-card"><img src="./1.jpg" alt="Memory 1"></div>
+            <div class="photo-card"><img src="./2.jpg" alt="Memory 2"></div>
+            <div class="photo-card"><img src="./33.jpg" alt="Memory 3"></div>
+            <div class="photo-card"><img src="./4.jpg" alt="Memory 4"></div>
+        </div>
+
+    </section>
+
+    <section class="container">
+        <h2>Why I Love You</h2>
+        <br>
+        <div class="reasons-container">
+            <div class="reason-card">
+                <div class="reason-icon">💖</div>
+                <h3>Your Heart</h3>
+                <p>You have the kindest, purest heart I've ever known.</p>
+            </div>
+            <div class="reason-card">
+                <div class="reason-icon">✨</div>
+                <h3>Your Smile</h3>
+                <p>It literally lights up my darkest days.</p>
+            </div>
+            <div class="reason-card">
+                <div class="reason-icon">🧸</div>
+                <h3>Your Comfort</h3>
+                <p>You are my safe space and my home.</p>
+            </div>
+            <div class="reason-card">
+                <div class="reason-icon">🌸</div>
+                <h3>Your Soul</h3>
+                <p>You are beautiful inside and out.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" style="margin-bottom: 100px;">
+        <button class="btn" onclick="revealSurprise()">Click for a Surprise 🎁</button>
+        
+        <div class="surprise-box" id="surpriseBox">
+            <p class="surprise-text" id="typewriterText"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with all my love, just for you. <br> Forever & Always.</p>
+    </footer>
+
+    <audio id="bgMusic" loop>
+        <source src="./Elvis_Presly_-_I_Can_t_Help_Falling_In_Love_With_You_(mp3.pm).mp3" type="audio/mpeg"> 
+    </audio>
+    <script src="./main.js"></script>
+</body>
+</html>
